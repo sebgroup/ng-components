@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Textbox",
+        "path": "/docs/Textbox",
+        "filePath": "./pages/Textbox-page/Textbox-page.module",
+        "module": "TextboxPageModule"
+    },
+    {
+        "name": "Textarea",
+        "path": "/docs/textarea",
+        "filePath": "./pages/textarea-page/textarea-page.module",
+        "module": "TextareaPageModule"
+    },
+    {
+        "name": "Text label",
+        "path": "/docs/textlabel",
+        "filePath": "./pages/textlabel-page/textlabel-page.module",
+        "module": "TextlabelPageModule"
+    },
+    {
+        "name": "Checkbox",
+        "path": "/docs/checkbox",
+        "filePath": "./pages/checkbox-page/checkbox-page.module",
+        "module": "CheckboxPageModule"
+    },
+    {
+        "name": "Dropdown",
+        "path": "/docs/dropdown",
+        "filePath": "./pages/dropdown-page/dropdown-page.module",
+        "module": "DropdownPageModule"
+    },
+    {
+        "name": "Datepicker",
+        "path": "/docs/datepicker",
+        "filePath": "./pages/datepicker-page/datepicker-page.module",
+        "module": "DatepickerPageModule"
+    },
+    {
+        "name": "Radio Group",
+        "path": "/docs/radiogroup",
+        "filePath": "./pages/radiogroup-page/radiogroup-page.module",
+        "module": "RadioGroupPageModule"
+    },
+    {
+        "name": "Rating",
+        "path": "/docs/rating",
+        "filePath": "./pages/rating-page/rating-page.module",
+        "module": "RatingPageModule"
+    },
+    {
+        "name": "Toggle",
+        "path": "/docs/toggle",
+        "filePath": "./pages/toggle-page/toggle-page.module",
+        "module": "TogglePageModule"
+    },
+    {
+        "name": "Toggle Selector",
+        "path": "/docs/toggle-selector",
+        "filePath": "./pages/toggle-selector-page/toggle-selector-page.module",
+        "module": "ToggleSelectorPageModule"
+    },
+    {
+        "name": "Slider",
+        "path": "/docs/slider",
+        "filePath": "./pages/slider-page/slider-page.module",
+        "module": "SliderPageModule"
+    },
+    {
+        "name": "Stepper",
+        "path": "/docs/stepper",
+        "filePath": "./pages/stepper-page/stepper-page.module",
+        "module": "StepperPageModule"
+    },
+    {
+        "name": "Button",
+        "path": "/docs/button",
+        "filePath": "./pages/button-page/button-page.module",
+        "module": "ButtonPageModule"
+    },
+    {
+        "name": "Chip",
+        "path": "/docs/chip",
+        "filePath": "./pages/chip-page/chip-page.module",
+        "module": "ChipPageModule"
+    },
+    {
+        "name": "Tooltip",
+        "path": "/docs/tooltip",
+        "filePath": "./pages/tooltip-page/tooltip-page.module",
+        "module": "TooltipPageModule"
+    },
+    {
+        "name": "Loader",
+        "path": "/docs/loader",
+        "filePath": "./pages/loader-page/loader-page.module",
+        "module": "LoaderPageModule"
+    },
+    {
+        "name": "Progress Bar",
+        "path": "/docs/progressbar",
+        "filePath": "./pages/progressbar-page/progressbar-page.module",
+        "module": "ProgressbarPageModule"
+    },
+    {
+        "name": "Pagination",
+        "path": "/docs/pagination",
+        "filePath": "./pages/pagination-page/pagination-page.module",
+        "module": "PaginationPageModule"
+    },
+    {
+        "name": "Timeline",
+        "path": "/docs/timeline",
+        "filePath": "./pages/timeline-page/timeline-page.module",
+        "module": "TimelinePageModule"
+    },
+    {
+        "name": "Breadcrumb",
+        "path": "/docs/breadcrumb",
+        "filePath": "./pages/breadcrumb-page/breadcrumb-page.module",
+        "module": "BreadcrumbPageModule"
+    },
+    {
+        "name": "Accordion",
+        "path": "/docs/accordion",
+        "filePath": "./pages/accordion-page/accordion-page.module",
+        "module": "AccordionPageModule"
+    },
+    {
+        "name": "Tabs",
+        "path": "/docs/tabs",
+        "filePath": "./pages/tabs-page/tabs-page.module",
+        "module": "TabsPageModule"
+    },
+    {
+        "name": "Notification",
+        "path": "/docs/notification",
+        "filePath": "./pages/notification-page/notification-page.module",
+        "module": "NotificationPageModule"
+    },
+    {
+        "name": "Table",
+        "path": "/docs/table",
+        "filePath": "./pages/table-page/table-page.module",
+        "module": "TablePageModule"
+    },
+    {
+        "name": "Modal",
+        "path": "/docs/modal",
+        "filePath": "./pages/modal-page/modal-page.module",
+        "module": "ModalPageModule"
+    },
+    {
+        "name": "Video",
+        "path": "/docs/video",
+        "filePath": "./pages/video-page/video-page.module",
+        "module": "VideoPageModule"
+    },
+    {
+        "name": "Timer",
+        "path": "/docs/timer",
+        "filePath": "./pages/timer-page/timer-page.module",
+        "module": "TimerPageModule"
+    },
+    {
+        "name": "Collapse",
+        "path": "/docs/collapse",
+        "filePath": "./pages/collapse-page/collapse-page.module",
+        "module": "CollapsePageModule"
+    }
+]
