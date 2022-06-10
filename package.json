@@ -107,7 +107,7 @@
         "protractor": "~7.0.0",
         "raw-loader": "^4.0.1",
         "rimraf": "^3.0.2",
-        "semantic-release": "^17.2.3",
+        "semantic-release": "^19.0.3",
         "ts-node": "^9.0.0",
         "tsickle": "^0.39.1",
         "tslint": "~6.1.3",
