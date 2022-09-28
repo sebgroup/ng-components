@@ -130,7 +130,13 @@
                             </div>
                         </ng-container>
                         <ng-template #notMulti>
-                            <label *ngIf="item.optionItem.label" tabIndex="-1" class="label">{{ item.optionItem.label }}</label>
+                            <label
+                                *ngIf="item.optionItem.label"
+                                tabIndex="-1"
+                                class="label"
+                                [attr.data-thooks]="item.optionItem.automationId"
+                                >{{ item.optionItem.label }}</label
+                            >
                         </ng-template>
                     </button>
 
