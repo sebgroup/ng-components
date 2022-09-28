@@ -29,7 +29,7 @@ class ToggleSelectorTestComponent {
     constructor() {
         this.list = [
             { value: "1", label: "Four mississipi", disabled: true },
-            { value: "2", label: "Five mississipi" },
+            { value: "2", label: "Five mississipi", description: "Sample description." },
         ];
     }
 }
@@ -70,11 +70,13 @@ describe("ToggleSelectorComponent", () => {
         fixture.detectChanges();
         const container: DebugElement = fixture.debugElement.query(By.css(".disabled"));
         const elements: DebugElement[] = fixture.debugElement.queryAll(By.css(".toggle-selector input:disabled"));
+        const descriptions: DebugElement[] = fixture.debugElement.queryAll(By.css(".text-disabled"));
         expect(container).toBeDefined();
         expect(container).not.toBeNull();
         expect(elements).toBeDefined();
         expect(elements).toBeTruthy();
         expect(elements.length).toBe(component.list.length);
+        expect(descriptions.length).toBeGreaterThan(0);
     });
 
     it("Should disable one element when disabled prop is set to true", () => {

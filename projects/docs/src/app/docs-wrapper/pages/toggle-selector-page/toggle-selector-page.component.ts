@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { FormService } from "@common/dynamic-form/form.service";
+import { ExtendedFormGroup } from "@common/dynamic-form/model/custom-classes/extended-form-group";
 import { IToggleSelector } from "@sebgroup/ng-components/toggle-selector";
 
 @Component({
@@ -14,8 +16,13 @@ import { IToggleSelector } from "@sebgroup/ng-components/toggle-selector";
                 justify-content: center;
                 align-self: stretch;
             }
+
+            .toggle-selector-container {
+                max-width: 26.25rem;
+            }
         `,
     ],
+    providers: [FormService],
 })
 export class ToggleSelectorPageComponent {
     importString: string = require("!raw-loader!@sebgroup/ng-components/toggle-selector/toggle-selector.component");
@@ -32,21 +39,53 @@ export class ToggleSelectorPageComponent {
         {
             value: "1",
             label: "One Missisipi",
-            description: "with description",
+            description: "Option item with description.",
         },
-        { value: "2", label: "Two mississipi", icon: this.icon },
+        {
+            value: "2",
+            label: "Two mississipi",
+            icon: this.icon,
+            description: "Option item with longer description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
         { value: "3", label: "Three mississipi", icon: this.icon, iconPosition: "right" },
         { value: "4", label: "", icon: this.icon },
         { value: "5", label: "Five mississipi", disabled: true },
-        { value: "6", customLabel: ("<div class='custom-option w-100'>Six mississipi</div>" as unknown) as HTMLElement },
+        { value: "6", customLabel: "<div class='custom-option w-100'>Six mississipi</div>" as unknown as HTMLElement },
     ];
-    model: IToggleSelector;
-    multi: boolean = true;
-    disabled: boolean = false;
-    error: boolean = false;
-    errorMessage: string = "i am an error";
 
-    constructor() {
+    errorMessage: string = "I am an error message.";
+    extendedFormGroup: ExtendedFormGroup;
+    model: IToggleSelector;
+
+    constructor(private formService: FormService) {
         document.title = "Toggle Selector - SEB Angular Components";
+        this.extendedFormGroup = this.formService.dynamicFormSectionsToFormGroup([
+            {
+                key: "toggles",
+                items: [
+                    {
+                        key: "multi",
+                        controlType: "Checkbox",
+                        label: "Multi-select",
+                        description: "Enable selection of multiple options.",
+                        value: true,
+                    },
+                    {
+                        key: "error",
+                        controlType: "Checkbox",
+                        label: "Error State",
+                        description: "View the component in an invalid state.",
+                        value: false,
+                    },
+                    {
+                        key: "disabled",
+                        controlType: "Checkbox",
+                        label: "Disabled State",
+                        description: "View the component in a disabled state.",
+                        value: false,
+                    },
+                ],
+            },
+        ]);
     }
 }

@@ -37,11 +37,17 @@ const TOGGLE_SELECTOR_CONTROL_VALUE_ACCESSOR: Provider = {
     providers: [TOGGLE_SELECTOR_CONTROL_VALUE_ACCESSOR],
 })
 export class ToggleSelectorComponent implements ControlValueAccessor, OnInit {
+    /** List of option items for the component */
     @Input() list: Array<IToggleSelector>;
+    /** Option item control name */
     @Input() name?: string = randomId("name");
+    /** Flag whether the component is allowed to select multiple options */
     @Input() multi?: boolean = false;
+    /** Flag whether the component is disabled */
     @Input() disabled?: boolean = false;
+    /** Flag whether the component is in an invalid state */
     @Input() error?: boolean = false;
+    /** Error message */
     @Input() errorMessage?: string;
 
     value: ToggleSelectorType = [];

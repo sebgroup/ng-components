@@ -1,18 +1,18 @@
 <app-doc-page [importString]="importString">
     <ng-container example>
-        <sebng-toggle-selector
-            [multi]="multi"
-            [list]="list"
-            [(ngModel)]="model"
-            [disabled]="disabled"
-            [error]="error"
-            [errorMessage]="errorMessage"
-        ></sebng-toggle-selector>
+        <div class="toggle-selector-container">
+            <sebng-toggle-selector
+                [list]="list"
+                [(ngModel)]="model"
+                [multi]="extendedFormGroup.value.toggles.multi"
+                [error]="extendedFormGroup.value.toggles.error"
+                [errorMessage]="errorMessage"
+                [disabled]="extendedFormGroup.value.toggles.disabled"
+            ></sebng-toggle-selector>
+        </div>
     </ng-container>
     <ng-container code>{{ code }}</ng-container>
-    <div class="row" controls>
-        <sebng-checkbox class="w-100" label="Multi select" [(ngModel)]="multi"></sebng-checkbox>
-        <sebng-checkbox class="w-100" label="Error state" [(ngModel)]="error"></sebng-checkbox>
-        <sebng-checkbox class="w-100" label="Disable state" [(ngModel)]="disabled"></sebng-checkbox>
-    </div>
+    <ng-container controls>
+        <app-dynamic-form [extendedFormGroup]="extendedFormGroup"></app-dynamic-form>
+    </ng-container>
 </app-doc-page>

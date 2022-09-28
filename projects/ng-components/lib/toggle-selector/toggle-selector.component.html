@@ -28,6 +28,9 @@
         <label [attr.for]="item.optionItem.value" *ngIf="!item.optionItem.customLabel; customLabel">{{ item.optionItem.label }}</label>
         <div #customLabel [outerHTML]="item.optionItem.customLabel"></div>
     </div>
+    <p *ngIf="!!item.optionItem.description" class="small" [class.text-disabled]="disabled || item.optionItem.disabled">
+        {{ item.optionItem.description }}
+    </p>
 </ng-container>
 
 <span *ngIf="error" class="text-danger">{{ errorMessage }}</span>
