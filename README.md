@@ -16,6 +16,24 @@ This is a set of angular components some of which are based on SEB's bootstrap. 
 -   The package sourcecode: [Github Source Code](https://github.com/sebgroup/ng-components)
 -   NPM package: [@sebgroup/ng-components](https://www.npmjs.com/package/@sebgroup/ng-components)
 
+---
+
+#### :rotating_light: NOTICE: `@sebgroup/ng-components` support has officially ended as of March 2023.
+
+**What does this mean?**
+
+The code will remain accessible on GitHub and [npm](https://www.npmjs.com/package/@sebgroup/ng-components). This website will remain here indefinitely.
+
+The project will be in an archived state, meaning that no new development can be made _unless_:
+
+-   it is meant for fixing critical and common-case bugs on the already existing components
+
+**Where do I go from here?**
+
+Go Green! Visit the [official Green documentation](https://sebgroup.github.io/green/latest/chlorophyll) to get started with SEB's new design system.
+
+---
+
 ## Minimum requirements
 
 This version of components has been developed with:
